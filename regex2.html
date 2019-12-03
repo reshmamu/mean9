@@ -1,0 +1,28 @@
+<html>
+
+<head></head>
+
+<body>
+    
+    <input type="text" id="text1" onblur="check()">
+
+
+
+    <script>
+    
+        function check(){
+            var name=document.getElementById('text1').value
+            //alert(name)
+            //var regexp=/java/g
+            var regexp=/^\w{4,10}$/g
+            //var matches=name.match(regexp)
+            alert(regexp.test(name))
+            //alert(matches)
+
+        }
+    
+    </script>
+</body>
+
+
+</html>

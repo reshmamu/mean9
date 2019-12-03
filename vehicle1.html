@@ -1,0 +1,30 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script src="js/veh.js"></script>
+        <form action="" method="POST">
+
+            <label for="">Vechile No</label>
+            <input type="text" id="no" required><br><br>
+
+            <label for="">Entry Time</label>
+            <input type="text" id="time" onclick="loadtime()"><br><br>
+
+            <label for="">hours</label>
+            <input type="text" id="hour" required><br><br>
+
+            <button onclick="vehicle()">save</button><br>
+
+            <button onclick="show()">remove</button>
+
+            <div id="show" style="display: none">
+               No <input type="text" onblur="remove()" id="v1">
+            </div>
+
+
+
+        </form>
+    </body>
+</html>

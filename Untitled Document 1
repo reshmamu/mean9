@@ -1,0 +1,19 @@
+Regex:Regular expression
+	Pattern matching and testing
+js:define
+	/ /
+
+	\w-alphabetic numeric
+	\d-digit -0-9
+	\s-space
+	\D-non digit (spl characters)
+	\W-non word characters
+
+g:flag
+	to search globally
++ is for one or more occurence
+* is for zero or more digit
+^ operator means its start with an operator
+$ is for ending
+
+

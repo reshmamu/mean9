@@ -1,0 +1,48 @@
+<html>
+    <head></head>
+    <body>
+        
+        <input type="text" name="number" id="num">
+        <button onclick="mcheck()">click</button>
+
+        <script>
+            
+            
+        function check(){
+            var name=document.getElementById('num').value
+            //alert(name)
+
+            //var regexp=/^\d{10}$/g
+            //var regexp=/^[9][8][7]\d{7}$/g     
+
+            var regexp=/^(987)\d{7}$/g
+            var result=regexp.test(name)
+            if(result){
+                alert("valid")
+            }else{
+                alert("not valid")
+            }
+        }
+
+
+        function mcheck(){
+
+            var name=document.getElementById('num').value
+            // alert(name)
+            var regexp=/^\w+[@][a-z-A-Z]{5}[.][a-zA-Z]{2,3}$/
+            alert(regexp.test(name))
+            if(result){
+                alert("valid")
+            }else{
+                alert("not valid")
+            }
+
+        }
+
+
+        </script>
+        
+
+
+    </body>
+</html>

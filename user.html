@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+<body>
+    
+
+
+
+<div class="row">
+           
+    <div class="col-sm-4">
+        <form action="" method="POST">
+             <label for="">USERNAME</label><br>
+             <label for="">AGE</label><br>
+             <label for="">DOB</label><br>
+             <input type="submit" value="save">
+        
+    </div>
+
+    <div class="col-sm-4">
+
+        <input type="text" id="name"><br>
+        <input type="text" id="age"><br>
+        <input type="date" id="dob"><br>
+                       
+    </div>
+    </form>
+</div>
+
+
+</div>
+
+<script>
+ function save1(){
+    var name=document.getElementById('name').value
+    var age=document.getElementById('age').value
+    var dob=document.getElementById('dob').value
+    let user=new user(name,age,dob)
+    var span=document.createElement('name','age','dob')
+    span.style.display='block'
+    span.style.boxShadow='5px 10px red'    
+ }
+
+
+</script>
+
+
+        
+</body>
+
+</html>

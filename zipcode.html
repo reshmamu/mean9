@@ -1,0 +1,29 @@
+<html>
+    <head></head>
+
+    <body>
+        <script>
+
+            function validate(){
+                var name=document.getElementById('code').value
+    
+
+                var regexp=/^\d{5}(-)\d{4}$/g
+                var result=regexp.test(name)
+                if(result){
+                   alert("valid")
+                }else{
+                   alert("not valid")
+                }
+
+            }
+        
+        </script>
+
+
+            <input type="text" id="code">
+            <button onclick="validate()"> click</button>
+
+            
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        
+        <script>
+            function showdate(){
+
+                //var date=new Date()
+                var date=new Date('2019','05','11')
+                alert(date)
+                var d=date.getDate()
+                console.log(d)
+                var y=date.getFullYear()
+                console.log(y)
+
+               // document.getElementById('date').value=date
+               document.getElementById('date').value=y
+            }
+        
+        </script>
+        <input type="text" name="" id="date">
+        <button onclick="showdate()">click</button>
+    </body>
+</html>

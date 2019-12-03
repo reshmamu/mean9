@@ -1,0 +1,43 @@
+<html>
+    <head></head>
+
+<body>
+    
+<script>
+
+ //var x=100          
+// var obj=new Number(100)     // converting a number into object
+// console.log(obj)
+ //console.log(typeof obj) 
+ //var obj=new String('hello')
+// console.log(obj)    
+// var y={}  //object creation
+//// console.log(typeof y)
+// console.log(y)  // to add values in to the object we can use dot operator ,and we can simply enter into the {} 
+
+
+
+var student={}
+console.log("object",student)
+ student.rollno=1
+ student.name='twinki'
+ student.age=22  
+ console.log("after", "adding properties",student)
+ console.log(student.hasOwnProperty('rollno'))
+
+ var student1={}
+ student1={rollno:12,name:'amal',age:20,avarage:function(m1,m2,m3){
+     return(m1+m2+m3)/3
+ }
+ }
+ console.log("after", "adding properties",student1)
+ var result=student1.avarage(10,20,30)
+ console.log("Average=",result)
+
+</script>
+
+
+</body>
+
+
+</html>

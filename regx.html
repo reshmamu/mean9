@@ -1,0 +1,36 @@
+<html>
+
+<head></head>
+
+<body>
+    
+<script>
+    
+    function validate(){
+
+        var regexp=/\d+/g   
+        // var regexp=/\d*/g             
+        var name=document.getElementById('username').value
+        alert(name)
+        alert(name.match(regexp))
+      
+    }
+
+    function checkinput(){
+
+        var regexp=/^[a-zA-Z]+\d+$/
+        var name=document.getElementById('username').value
+        var result=regexp.test(name)
+        alert(result)
+    }
+   
+    
+    
+</script>
+    <input type="text"  id="username">
+    <button onclick="checkinput()"> click  </button>
+
+</body>
+
+
+</html>

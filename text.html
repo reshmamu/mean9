@@ -1,0 +1,39 @@
+<html>
+
+<head></head>
+<body>
+
+
+    <script>
+    
+        function search(){
+           var content=document.getElementById('content').value
+          // alert(content)
+          // var word='in'
+          var word=document.getElementById('search').value
+
+           var exp=new RegExp(word,'g')  // i is for case sensitive
+           //alert(content.match(exp))
+           var words=content.match(exp)
+           //alert(words+" length :"+words.length)
+           //content.match(/word/) 
+
+           newcontent=content.replace(exp,"<span style='color:red'>"+word+"</span>")  //(argument,replacing word)
+           //newcontent=content.replace(word,"__")
+           document.getElementById('para1').innerHTML=newcontent
+        }
+    
+    </script>
+    
+    <textarea name="" cols="30" rows="10" id="content">
+
+    </textarea>
+
+    <input type="text" id="search">
+    <button onclick="search()">click</button>
+    <p id="para1">
+    </p>
+
+</body>
+</html>
+           

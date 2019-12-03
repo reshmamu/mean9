@@ -1,0 +1,22 @@
+<html>
+    <head>
+
+    </head>
+    <body> 
+                <input type="text" id="txt">
+                <button onclick="dynamic()">click</button><br>
+                <div id="demo">
+
+                </div>
+                
+    <script>
+        function dynamic(){
+            var value=document.getElementById('txt').value
+            var parag=document.createElement("p")
+            parag.innerHTML=value
+            var div=document.getElementById('demo')
+            div.appendChild(parag)    
+        }
+    </script>
+    </body>
+</html>

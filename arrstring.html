@@ -1,0 +1,70 @@
+<html>
+<head>
+
+</head>
+<body>
+<script>
+var arr=["a","b",12,13,"d"]//return false
+result=arr.every((x)=>{
+console.log(x)
+var regex=/[a-zA-Z]+/g
+return regex.test(x)//return false when condition fail on one element
+})
+//var arr1=["a","b","c"]//return true
+console.log(result)
+var str="hi hello how are you"
+words=str.split(" ") //return type is an array
+words.forEach(element => {
+console.log(element) 
+});
+var stmt="java script is interpreted java script is object oriented"
+//console.log(stmt)
+word=stmt.split(" ")
+var obj={}
+word.forEach(x=>{
+if(obj[x]){
+obj[x]=obj[x]+1
+}
+else{
+obj[x]=1
+}
+})
+console.log(obj)
+
+try{
+    sum=k+1
+}
+catch(e){
+    console.log("Exception caught")
+    console.log(e.name)
+    console.log(e.message)
+}
+finally{
+    console.log("finally block is executed")
+}
+console.log("after exception")
+function check(input){
+    if(isNaN(input)){
+        throw new Error("invalid input")
+    }
+}
+try{
+    check()
+}
+catch(e){
+    console.log(e.message)
+}
+var input=prompt("Enter a number")
+alert(input)
+var result=confirm("DO you wish"+"to continue?")
+alert(result)
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
