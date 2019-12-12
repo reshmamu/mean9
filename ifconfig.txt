@@ -1,0 +1,247 @@
+1)....expertzlab@expertzlab-Veriton-M200-H81:~/ammu$ ifconfig
+
+Command 'ifconfig' not found, but can be installed with:
+
+sudo apt install net-tools
+
+expertzlab@expertzlab-Veriton-M200-H81:~/ammu$ sudo apt install net-tools
+[sudo] password for expertzlab: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  linux-headers-4.15.0-20 linux-headers-4.15.0-20-generic
+  linux-image-4.15.0-20-generic linux-modules-4.15.0-20-generic
+  linux-modules-extra-4.15.0-20-generic
+Use 'sudo apt autoremove' to remove them.
+The following NEW packages will be installed:
+  net-tools
+0 upgraded, 1 newly installed, 0 to remove and 409 not upgraded.
+Need to get 194 kB of archives.
+After this operation, 803 kB of additional disk space will be used.
+Get:1 http://us.archive.ubuntu.com/ubuntu bionic/main amd64 net-tools amd64 1.60+git20161116.90da8a0-1ubuntu1 [194 kB]
+Fetched 194 kB in 2s (112 kB/s)     
+Selecting previously unselected package net-tools.
+(Reading database ... 212615 files and directories currently installed.)
+Preparing to unpack .../net-tools_1.60+git20161116.90da8a0-1ubuntu1_amd64.deb ...
+Unpacking net-tools (1.60+git20161116.90da8a0-1ubuntu1) ...
+Processing triggers for man-db (2.8.3-2) ...
+Setting up net-tools (1.60+git20161116.90da8a0-1ubuntu1) ...
+expertzlab@expertzlab-Veriton-M200-H81:~/ammu$ ifconfig
+enp2s0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.1.87  netmask 255.255.255.0  broadcast 192.168.1.255
+        inet6 fe80::fdf6:4e4b:e912:3cdb  prefixlen 64  scopeid 0x20<link>
+        ether b8:ae:ed:30:b5:ac  txqueuelen 1000  (Ethernet)
+        RX packets 115636  bytes 147760238 (147.7 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 64176  bytes 5987417 (5.9 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 1929  bytes 181607 (181.6 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 1929  bytes 181607 (181.6 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+
+
+
+2)....expertzlab@expertzlab-Veriton-M200-H81:~/ammu$ ping www.google.com
+PING www.google.com (172.217.163.36) 56(84) bytes of data.
+64 bytes from maa05s01-in-f4.1e100.net (172.217.163.36): icmp_seq=1 ttl=57 time=18.4 ms
+64 bytes from maa05s01-in-f4.1e100.net (172.217.163.36): icmp_seq=2 ttl=57 time=17.7 ms
+64 bytes from maa05s01-in-f4.1e100.net (172.217.163.36): icmp_seq=3 ttl=57 time=17.7 ms
+64 bytes from maa05s01-in-f4.1e100.net (172.217.163.36): icmp_seq=4 ttl=57 time=18.9 ms
+64 bytes from maa05s01-in-f4.1e100.net (172.217.163.36): icmp_seq=5 ttl=57 time=18.0 ms
+64 bytes from maa05s01-in-f4.1e100.net (172.217.163.36): icmp_seq=6 ttl=57 time=17.6 ms
+64 bytes from maa05s01-in-f4.1e100.net (172.217.163.36): icmp_seq=7 ttl=57 time=20.6 ms
+64 bytes from maa05s01-in-f4.1e100.net (172.217.163.36): icmp_seq=8 ttl=57 time=17.6 ms
+
+^C
+--- www.google.com ping statistics ---
+64 packets transmitted, 8 received, 87% packet loss, time 64310ms
+rtt min/avg/max/mdev = 17.613/18.338/20.622/0.970 ms
+expertzlab@expertzlab-Veriton-M200-H81:~/ammu$ ln -s /usr/bin/code cod
+expertzlab@expertzlab-Veriton-M200-H81:~/ammu$ ls cod -al
+lrwxrwxrwx 1 expertzlab expertzlab 13 Dec  6 00:00 cod -> /usr/bin/code
+expertzlab@expertzlab-Veriton-M200-H81:~/ammu$ ./cod   (it will display the visual studio code)
+expertzlab@expertzlab-Veriton-M200-H81:~/ammu$ ls /usr/bin/google-chrome
+/usr/bin/google-chrome
+expertzlab@expertzlab-Veriton-M200-H81:~/ammu$ ln -s /usr/bin/google-chrome chrome
+ln: failed to create symbolic link 'chrome': File exists
+expertzlab@expertzlab-Veriton-M200-H81:~/ammu$ ls chrome -al
+lrwxrwxrwx 1 expertzlab expertzlab 22 Dec  6 00:03 chrome -> /usr/bin/google-chrome
+expertzlab@expertzlab-Veriton-M200-H81:~/ammu$ ssh appu@127.0.0.1
+ssh: connect to host 127.0.0.1 port 22: Connection refused
+expertzlab@expertzlab-Veriton-M200-H81:~/ammu$ sudo apt install openssh server
+[sudo] password for expertzlab: 
+expertzlab@expertzlab-Veriton-M200-H81:~/ammu$ sudo apt install openssh-server
+[sudo] password for expertzlab: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  linux-headers-4.15.0-20 linux-headers-4.15.0-20-generic
+  linux-image-4.15.0-20-generic linux-modules-4.15.0-20-generic
+  linux-modules-extra-4.15.0-20-generic
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  ncurses-term openssh-sftp-server ssh-import-id
+Suggested packages:
+  molly-guard monkeysphere rssh ssh-askpass
+The following NEW packages will be installed:
+  ncurses-term openssh-server openssh-sftp-server ssh-import-id
+0 upgraded, 4 newly installed, 0 to remove and 409 not upgraded.
+Need to get 637 kB of archives.
+After this operation, 5,316 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]y    
+0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]^C
+expertzlab@expertzlab-Veriton-M200-H81:~/ammu$ sudo apt install openssh-server
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  linux-headers-4.15.0-20 linux-headers-4.15.0-20-generic
+  linux-image-4.15.0-20-generic linux-modules-4.15.0-20-generic
+  linux-modules-extra-4.15.0-20-generic
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  ncurses-term openssh-sftp-server ssh-import-id
+Suggested packages:
+  molly-guard monkeysphere rssh ssh-askpass
+The following NEW packages will be installed:
+  ncurses-term openssh-server openssh-sftp-server ssh-import-id
+0 upgraded, 4 newly installed, 0 to remove and 409 not upgraded.
+Need to get 637 kB of archives.
+After this operation, 5,316 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://us.archive.ubuntu.com/ubuntu bionic-updates/main amd64 ncurses-term all 6.1-1ubuntu1.18.04 [248 kB]
+Get:2 http://us.archive.ubuntu.com/ubuntu bionic-updates/main amd64 openssh-sftp-server amd64 1:7.6p1-4ubuntu0.3 [45.6 kB]
+Get:3 http://us.archive.ubuntu.com/ubuntu bionic-updates/main amd64 openssh-server amd64 1:7.6p1-4ubuntu0.3 [333 kB]
+Get:4 http://us.archive.ubuntu.com/ubuntu bionic-updates/main amd64 ssh-import-id all 5.7-0ubuntu1.1 [10.9 kB]
+Fetched 637 kB in 17s (36.5 kB/s)        
+Preconfiguring packages ...
+Selecting previously unselected package ncurses-term.
+(Reading database ... 212663 files and directories currently installed.)
+Preparing to unpack .../ncurses-term_6.1-1ubuntu1.18.04_all.deb ...
+Unpacking ncurses-term (6.1-1ubuntu1.18.04) ...
+Selecting previously unselected package openssh-sftp-server.
+Preparing to unpack .../openssh-sftp-server_1%3a7.6p1-4ubuntu0.3_amd64.deb ...
+Unpacking openssh-sftp-server (1:7.6p1-4ubuntu0.3) ...
+Selecting previously unselected package openssh-server.
+Preparing to unpack .../openssh-server_1%3a7.6p1-4ubuntu0.3_amd64.deb ...
+Unpacking openssh-server (1:7.6p1-4ubuntu0.3) ...
+Selecting previously unselected package ssh-import-id.
+Preparing to unpack .../ssh-import-id_5.7-0ubuntu1.1_all.deb ...
+Unpacking ssh-import-id (5.7-0ubuntu1.1) ...
+Setting up ncurses-term (6.1-1ubuntu1.18.04) ...
+Processing triggers for ufw (0.35-5) ...
+Processing triggers for ureadahead (0.100.0-20) ...
+ureadahead will be reprofiled on next reboot
+Setting up openssh-sftp-server (1:7.6p1-4ubuntu0.3) ...
+Processing triggers for systemd (237-3ubuntu10) ...
+Processing triggers for man-db (2.8.3-2) ...
+Setting up ssh-import-id (5.7-0ubuntu1.1) ...
+Setting up openssh-server (1:7.6p1-4ubuntu0.3) ...
+
+Creating config file /etc/ssh/sshd_config with new version
+Creating SSH2 RSA key; this may take some time ...
+2048 SHA256:XATAK9mRk9SPv36Af/ahYTOGfyUoFL8/bllxMg26EiQ root@expertzlab-Veriton-M200-H81 (RSA)
+Creating SSH2 ECDSA key; this may take some time ...
+256 SHA256:cKXGRs4imgvXzUWmYJeGx5YO4Ph3WvVgL76rjnzAeaE root@expertzlab-Veriton-M200-H81 (ECDSA)
+Creating SSH2 ED25519 key; this may take some time ...
+256 SHA256:IpcaPDw4n1136jzwo1N8opycZSJZp7UgN0qVqU12ceg root@expertzlab-Veriton-M200-H81 (ED25519)
+Created symlink /etc/systemd/system/sshd.service → /lib/systemd/system/ssh.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/ssh.service → /lib/systemd/system/ssh.service.
+Processing triggers for ureadahead (0.100.0-20) ...
+Processing triggers for systemd (237-3ubuntu10) ...
+Processing triggers for ufw (0.35-5) ...
+expertzlab@expertzlab-Veriton-M200-H81:~/ammu$ cd ..
+expertzlab@expertzlab-Veriton-M200-H81:~$ ssh appu@127.0.0.1
+The authenticity of host '127.0.0.1 (127.0.0.1)' can't be established.
+ECDSA key fingerprint is SHA256:cKXGRs4imgvXzUWmYJeGx5YO4Ph3WvVgL76rjnzAeaE.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '127.0.0.1' (ECDSA) to the list of known hosts.
+appu@127.0.0.1's password: 
+Welcome to Ubuntu 18.04 LTS (GNU/Linux 4.15.0-72-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+ * Overheard at KubeCon: "microk8s.status just blew my mind".
+
+     https://microk8s.io/docs/commands#microk8s.status
+
+ * Canonical Livepatch is available for installation.
+   - Reduce system reboots and improve kernel security. Activate at:
+     https://ubuntu.com/livepatch
+
+413 packages can be updated.
+81 updates are security updates.
+
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+
+
+
+
+3)....appu@expertzlab-Veriton-M200-H81:~$ ps -el | grep mysqld
+
+4)....appu@expertzlab-Veriton-M200-H81:~$ ps -el | grep sshd
+4 S     0 12411     1  0  80   0 - 18074 -      ?        00:00:00 sshd
+4 S     0 12499 12411  0  80   0 - 26945 -      ?        00:00:00 sshd
+5 S  1001 12628 12499  0  80   0 - 27520 -      ?        00:00:00 sshd
+
+5)....appu@expertzlab-Veriton-M200-H81:~$ exit
+logout
+Connection to 127.0.0.1 closed.
+
+
+
+6)....appu@expertzlab-Veriton-M200-H81:/$ scp ./difference.txt appu@127.0.0.1:~/
+The authenticity of host '127.0.0.1 (127.0.0.1)' can't be established.
+ECDSA key fingerprint is SHA256:cKXGRs4imgvXzUWmYJeGx5YO4Ph3WvVgL76rjnzAeaE.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '127.0.0.1' (ECDSA) to the list of known hosts.
+appu@127.0.0.1's password: 
+./difference.txt: No such file or directory
+appu@expertzlab-Veriton-M200-H81:/$ ls
+bin    dev   initrd.img      lib64       mnt   root  snap  tmp  vmlinuz
+boot   etc   initrd.img.old  lost+found  opt   run   srv   usr  vmlinuz.old
+cdrom  home  lib             media       proc  sbin  sys   var
+appu@expertzlab-Veriton-M200-H81:/$ touch diff.txt
+touch: cannot touch 'diff.txt': Permission denied
+appu@expertzlab-Veriton-M200-H81:/$ cd
+appu@expertzlab-Veriton-M200-H81:~$ touch diff.txt
+appu@expertzlab-Veriton-M200-H81:~$ scp ./diff.txt appu@127.0.0.1:~/
+appu@127.0.0.1's password: 
+diff.txt                                      100%    0     0.0KB/s   00:00  
+
+
+7)....appu@expertzlab-Veriton-M200-H81:~$ sudo ufw disable
+[sudo] password for appu: 
+Sorry, try again.
+[sudo] password for appu: 
+Firewall stopped and disabled on system startup
+
+
+8)....appu@expertzlab-Veriton-M200-H81:~$ sudo ufw enable
+Command may disrupt existing ssh connections. Proceed with operation (y|n)? y
+Firewall is active and enabled on system startup
+appu@expertzlab-Veriton-M200-H81:~$ 
+
+9).....expertzlab@expertzlab-Veriton-M200-H81:~$ echo $PATH
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/expertzlab/java-8-oracle/bin:/home/expertzlab/hadoop/hadoop-2.6.0-cdh5.4.1/bin:/home/expertzlab/hadoop/hadoop-2.6.0-cdh5.4.1/sbin:/home/expertzlab/hadoop/hadoop-2.6.0-cdh5.4.1/bin:/home/expertzlab/hadoop/pig-0.12.0-cdh5.4.1/sbin:/home/expertzlab/hadoop/pig-0.12.0-cdh5.4.1/bin:/home/expertzlab/hadoop/hbase-1.0.0-cdh5.4.1/sbin:/home/expertzlab/hadoop/hbase-1.0.0-cdh5.4.1/bin:/home/expertzlab/hadoop/sqoop-1.4.5-cdh5.4.1/sbin:/home/expertzlab/hadoop/sqoop-1.4.5-cdh5.4.1/bin:/home/expertzlab/node-v9.9.0-linux-x64/bin:/home/expertzlab/hadoop/hive-1.1.0-cdh5.4.1/sbin:/home/expertzlab/hadoop/hive-1.1.0-cdh5.4.1/bin:/home/expertzlab/hadoop/db-derby-10.13.1.1-bin/bin:/opt/wine-staging/bin:/usr/lib/jvm/java-8-oracle/jre/lib/amd64/server
+
+
