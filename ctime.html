@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <style>
+            #clock{
+                width: 300px;
+                background: #112255;
+                padding: 20px;
+                margin: 20px 0;
+                color: aquamarine;
+                display: flow-root;
+                font: 20px monospace;
+            }
+        </style>
+
+    </head>
+    <body>
+    <script>
+        function showtime(){
+            var d=new Date();
+            document.getElementById("clock").innerHTML=d.toLocaleTimeString();
+
+        }  
+        var inervaliD=setInterval(showtime,1000);
+         
+    </script>
+    <p>The current time in your computer is: <div id="clock"></div></p>    
+    
+    </body>
+</html>
