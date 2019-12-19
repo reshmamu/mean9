@@ -1,0 +1,221 @@
+expertzlab@expertzlab-Veriton-M200-H81:~$ cd Desktop
+expertzlab@expertzlab-Veriton-M200-H81:~/Desktop$ cd reshma
+expertzlab@expertzlab-Veriton-M200-H81:~/Desktop/reshma$ mkdir git
+expertzlab@expertzlab-Veriton-M200-H81:~/Desktop/reshma$ cd git
+expertzlab@expertzlab-Veriton-M200-H81:~/Desktop/reshma/git$ git --version
+git version 2.17.1
+expertzlab@expertzlab-Veriton-M200-H81:~/Desktop/reshma/git$ git init
+Initialized empty Git repository in /home/expertzlab/Desktop/reshma/git/.git/
+expertzlab@expertzlab-Veriton-M200-H81:~/Desktop/reshma/git$ ls
+expertzlab@expertzlab-Veriton-M200-H81:~/Desktop/reshma/git$ ls -al
+total 12
+drwxr-xr-x 3 expertzlab expertzlab 4096 Dec 10 00:10 .
+drwxrwxr-x 6 expertzlab expertzlab 4096 Dec 10 00:10 ..
+drwxr-xr-x 7 expertzlab expertzlab 4096 Dec 10 00:10 .git
+expertzlab@expertzlab-Veriton-M200-H81:~/Desktop/reshma/git$ touch f1.txt
+expertzlab@expertzlab-Veriton-M200-H81:~/Desktop/reshma/git$ git ststus
+git: 'ststus' is not a git command. See 'git --help'.
+
+The most similar command is
+	status
+expertzlab@expertzlab-Veriton-M200-H81:~/Desktop/reshma/git$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	f1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+expertzlab@expertzlab-Veriton-M200-H81:~/Desktop/reshma/git$ git add f1.txt
+expertzlab@expertzlab-Veriton-M200-H81:~/Desktop/reshma/git$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   f1.txt
+
+
+
+expertzlab@expertzlab-Veriton-M200-H81:~/Desktop/reshma/git$ git commit -m 'file added'
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'expertzlab@expertzlab-Veriton-M200-H81.(none)')
+expertzlab@expertzlab-Veriton-M200-H81:~/Desktop/reshma/git$ git config --global user.email "you@example.com"
+expertzlab@expertzlab-Veriton-M200-H81:~/Desktop/reshma/git$ git config --global user.email "reshmaunnikrishnanm.com"
+expertzlab@expertzlab-Veriton-M200-H81:~/Desktop/reshma/git$ git config --global user.name "Your Name"
+expertzlab@expertzlab-Veriton-M200-H81:~/Desktop/reshma/git$ git config --global user.name "reshmamu"
+expertzlab@expertzlab-Veriton-M200-H81:~/Desktop/reshma/git$ git commit -m 'file added'
+[master (root-commit) e02a2c4] file added
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 f1.txt
+expertzlab@expertzlab-Veriton-M200-H81:~/Desktop/reshma/git$ touch f2.txt
+expertzlab@expertzlab-Veriton-M200-H81:~/Desktop/reshma/git$ git add f2.txt
+expertzlab@expertzlab-Veriton-M200-H81:~/Desktop/reshma/git$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   f2.txt
+
+expertzlab@expertzlab-Veriton-M200-H81:~/Desktop/reshma/git$ git commit -m 'file added'
+[master f91f79e] file added
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 f2.txt
+expertzlab@expertzlab-Veriton-M200-H81:~/Desktop/reshma/git$ ls
+f1.txt  f2.txt
+expertzlab@expertzlab-Veriton-M200-H81:~/Desktop/reshma/git$ git log
+commit f91f79ea7cb69d36940b0fcb98ba924434fc51db (HEAD -> master)
+Author: reshmamu <reshmaunnikrishnanm.com>
+Date:   Tue Dec 10 00:16:09 2019 -0500
+
+    file added
+
+commit e02a2c4531fc18227f808dea428bc460e6e73a75
+Author: reshmamu <reshmaunnikrishnanm.com>
+Date:   Tue Dec 10 00:13:44 2019 -0500
+
+    file added
+
+
+
+
+
+expertzlab@expertzlab-Veriton-M200-H81:~/Desktop/reshma/git$ git checkout master 
+Already on 'master'
+expertzlab@expertzlab-Veriton-M200-H81:~/Desktop/reshma/git$ history >10dec2019
+expertzlab@expertzlab-Veriton-M200-H81:~/Desktop/reshma/git$ vi 10dec2019
+expertzlab@expertzlab-Veriton-M200-H81:~/Desktop/reshma/git$ git  status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	10dec2019
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+expertzlab@expertzlab-Veriton-M200-H81:~/Desktop/reshma/git$ git add .
+expertzlab@expertzlab-Veriton-M200-H81:~/Desktop/reshma/git$ git commit -m "f1 modified"
+[master fc6db0e] f1 modified
+ 1 file changed, 761 insertions(+)
+ create mode 100644 10dec2019
+expertzlab@expertzlab-Veriton-M200-H81:~/Desktop/reshma/git$ git log
+commit fc6db0e181183ba63fec7e0eff147b5e05c7090e (HEAD -> master)
+Author: reshmamu <reshmaunnikrishnanm.com>
+Date:   Tue Dec 10 00:36:58 2019 -0500
+
+    f1 modified
+
+commit f91f79ea7cb69d36940b0fcb98ba924434fc51db
+Author: reshmamu <reshmaunnikrishnanm.com>
+Date:   Tue Dec 10 00:16:09 2019 -0500
+
+    file added
+
+commit e02a2c4531fc18227f808dea428bc460e6e73a75
+Author: reshmamu <reshmaunnikrishnanm.com>
+Date:   Tue Dec 10 00:13:44 2019 -0500
+
+    file added
+expertzlab@expertzlab-Veriton-M200-H81:~/Desktop/reshma/git$ git checkout -b test
+Switched to a new branch 'test'
+expertzlab@expertzlab-Veriton-M200-H81:~/Desktop/reshma/git$ git status
+On branch test
+nothing to commit, working tree clean
+expertzlab@expertzlab-Veriton-M200-H81:~/Desktop/reshma/git$ git log
+commit fc6db0e181183ba63fec7e0eff147b5e05c7090e (HEAD -> test, master)
+Author: reshmamu <reshmaunnikrishnanm.com>
+Date:   Tue Dec 10 00:36:58 2019 -0500
+
+    f1 modified
+
+commit f91f79ea7cb69d36940b0fcb98ba924434fc51db
+Author: reshmamu <reshmaunnikrishnanm.com>
+Date:   Tue Dec 10 00:16:09 2019 -0500
+
+    file added
+
+commit e02a2c4531fc18227f808dea428bc460e6e73a75
+Author: reshmamu <reshmaunnikrishnanm.com>
+Date:   Tue Dec 10 00:13:44 2019 -0500
+
+    file added
+expertzlab@expertzlab-Veriton-M200-H81:~/Desktop/reshma/git$ git checkout master
+Switched to branch 'master'
+expertzlab@expertzlab-Veriton-M200-H81:~/Desktop/reshma/git$ git log
+commit fc6db0e181183ba63fec7e0eff147b5e05c7090e (HEAD -> master, test)
+Author: reshmamu <reshmaunnikrishnanm.com>
+Date:   Tue Dec 10 00:36:58 2019 -0500
+
+    f1 modified
+
+commit f91f79ea7cb69d36940b0fcb98ba924434fc51db
+Author: reshmamu <reshmaunnikrishnanm.com>
+Date:   Tue Dec 10 00:16:09 2019 -0500
+
+    file added
+
+commit e02a2c4531fc18227f808dea428bc460e6e73a75
+Author: reshmamu <reshmaunnikrishnanm.com>
+Date:   Tue Dec 10 00:13:44 2019 -0500
+
+    file added
+expertzlab@expertzlab-Veriton-M200-H81:~/Desktop/reshma/git$ git checkout -b test
+fatal: A branch named 'test' already exists.
+expertzlab@expertzlab-Veriton-M200-H81:~/Desktop/reshma/git$ git checkout -b tests
+Switched to a new branch 'tests'
+expertzlab@expertzlab-Veriton-M200-H81:~/Desktop/reshma/git$ ls
+10dec2019  f1.txt  f2.txt
+
+
+expertzlab@expertzlab-Veriton-M200-H81:~/Desktop/reshma/git$ git branch -a
+  master
+  test
+* testsexpertzlab@expertzlab-Veriton-M200-H81:~/Desktop/reshma/git$ git checkout  -b new
+Switched to a new branch 'new'
+expertzlab@expertzlab-Veriton-M200-H81:~/Desktop/reshma/git$ git branch -a
+  master
+* new
+  test
+  tests
+
+
+expertzlab@expertzlab-Veriton-M200-H81:~/Desktop/reshma/git$ git checkout master
+Switched to branch 'master'
+expertzlab@expertzlab-Veriton-M200-H81:~/Desktop/reshma/git$ git branch -D new
+Deleted branch new (was fc6db0e).
+expertzlab@expertzlab-Veriton-M200-H81:~/Desktop/reshma/git$ git branch -a
+* master
+  test
+  tests
+
+expertzlab@expertzlab-Veriton-M200-H81:~/Desktop/reshma/git$ git remote add origin https://github.com/reshmamu/test-dec.git
+expertzlab@expertzlab-Veriton-M200-H81:~/Desktop/reshma/git$ git remote -v
+origin	https://github.com/reshmamu/test-dec.git (fetch)
+origin	https://github.com/reshmamu/test-dec.git (push)
+expertzlab@expertzlab-Veriton-M200-H81:~/Desktop/reshma/git$ git push origin test
+Username for 'https://github.com': reshmamu
+Password for 'https://reshmamu@github.com': 
+Counting objects: 8, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (8/8), 5.24 KiB | 5.24 MiB/s, done.
+Total 8 (delta 0), reused 0 (delta 0)
+To https://github.com/reshmamu/test-dec.git
+ * [new branch]      test -> test
+expertzlab@expertzlab-Veriton-M200-H81:~/Desktop/reshma/git$ 
+

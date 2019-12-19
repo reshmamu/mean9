@@ -1,0 +1,19 @@
+expertzlab@expertzlab-Veriton-M200-H81:~$ sudo npm install typescript -g
+[sudo] password for expertzlab: 
+/usr/bin/tsc -> /usr/lib/node_modules/typescript/bin/tsc
+/usr/bin/tsserver -> /usr/lib/node_modules/typescript/bin/tsserver
++ typescript@3.7.3
+added 1 package from 1 contributor in 3.069s
+
+
+   ╭────────────────────────────────────────────────────────────────╮
+   │                                                                │
+   │      New minor version of npm available! 6.11.3 → 6.13.2       │
+   │   Changelog: https://github.com/npm/cli/releases/tag/v6.13.2   │
+   │               Run npm install -g npm to update!                │
+   │                                                                │
+   ╰────────────────────────────────────────────────────────────────╯
+
+expertzlab@expertzlab-Veriton-M200-H81:~$ tsc -v
+Version 3.7.3
+

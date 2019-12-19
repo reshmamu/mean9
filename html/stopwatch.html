@@ -1,0 +1,30 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            function stime(){
+                var m=document.getElementById("time").value
+                if(m==''){
+                alert("empty field")
+                }
+   
+                stime2()
+                function stime2(){
+                    if(m==0){
+                        return
+                    } 
+                    document.getElementById("div").innerHTML=m
+                    m--
+                    setTimeout(stime2,1000)
+                }
+            }
+
+
+            
+            
+        </script>
+             <input type="text" id="time">
+             <button onclick="stime()">click</button>
+             <div id="div"></div>
+    </body>
+</html>
